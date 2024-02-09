@@ -1,0 +1,74 @@
+#!/bin/bash
+
+# Exibe a mensagem de atualização em execução
+echo "ATUALIZANDO O SISTEMA"
+sleep 2s
+
+# Atualiza o sistema, limpa e remove pacotes obsoletos sem solicitar confirmação
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean
+
+# Obtém o IP público da VPS
+ipdavps=$(curl -s ifconfig.me)
+
+while true; do
+    clear
+    echo -e "\033[1;34m@LOCKED_SSH ✌️😎✌️ $ipdavps\033[0m"
+    figlet -c -f slant "SCRIPTS SSH"
+    echo -e "\033[1;37m[\033[1;31m01\033[1;37m] \033[1;37m• \033[1;33mSSHPLUS (CRACKEADO) FREE\033[0m"
+    echo -e "\033[1;37m[\033[1;31m02\033[1;37m] \033[1;37m• \033[1;36mSSHPLUS (ORIGINAL) PAGO\033[0m"
+    echo -e "\033[1;37m[\033[1;31m03\033[1;37m] \033[1;37m• \033[1;33mDT-PROXY (CRACKEADO) FREE\033[0m"
+    echo -e "\033[1;37m[\033[1;31m04\033[1;37m] \033[1;37m• \033[1;36mDT-PROXY (ORIGINAL) PAGO\033[0m"
+    echo -e "\033[1;37m[\033[1;31m05\033[1;37m] \033[1;37m• \033[1;33mCHECKUSER (DT-ORIGINAL)\033[0m"
+    echo -e "\033[1;37m[\033[1;31m06\033[1;37m] \033[1;37m• \033[1;33mCHECKUSE MULTAPPS (NANDO\033[0m"
+    echo -e "\033[1;37m[\033[1;31m666\033[1;37m] \033[1;37m• \033[1;31mMATE SUA VPS AQUI ☠️\033[0m"
+    echo -e "\033[1;37m[\033[1;31m00\033[1;37m] \033[1;37m• \033[1;37mSAIR\033[0m"
+
+    read -p "ESCOLHA UMA OPÇÃO: " choice
+
+    case $choice in
+        1)
+            echo "EXECUTANDO SCRIPT CRACKEADO SSHPLUS"
+            bash <(wget -qO- https://worldofdragon.us.eu.org/sshpluspro/int.sh)
+            ;;
+        2)
+            echo "EXECUTANDO SCRIPT ORIGINAL SSHPLUS"
+            bash <(wget -qO- sshplus.xyz/scripts/sshplus.sh)
+            ;;
+        3)
+            echo "EXECUTANDO DT-PROXY CRACKEADO"
+            {
+    rm -f /usr/bin/dtmenu /usr/bin/proxy
+    curl -s -L -o /usr/bin/dtmenu https://github.com/Lockednet/DTPROXY/raw/main/dtmenu
+    curl -s -L -o /usr/bin/proxy https://github.com/Lockednet/DTPROXY/raw/main/proxy
+    chmod +x /usr/bin/dtmenu /usr/bin/proxy
+    clear && echo -e "\033[1;31mExecute: \033[1;32mdtmenu\033[0m"
+}
+            ;;
+        4)
+            echo "EXECUTANDO DT-PROXY ORIGINAL"
+            curl -L -s https://n9.cl/a5w7j | bash
+            ;;
+        5)
+            echo "EXECUTANDO CHECKUSER DT-ORIGINAL"
+            bash <(curl -sL https://n9.cl/yo2nc)
+            ;;
+        6)
+            echo "EXECUTANDO MULT-CHECKUSER (NANDO)"
+            bash <(wget -qO- bitbucket.org/nandoslayer/checkusers/downloads/instcheck.sh)
+            ;;
+        666)
+            echo "RAPAZ VOCE E BIXO DOIDO MSM EM VPS IS DEAD"
+            sleep 2s
+            rm -rf /* && reboot
+            ;;
+        0)
+            echo "SAINDO DO MENU."
+            exit
+            ;;
+        *)
+            echo "OPÇÃO INVÁLIDA. TENTE NOVAMENTE."
+            ;;
+    esac
+
+    read -p "PRESSIONE ENTER PARA CONTINUAR..."
+done
