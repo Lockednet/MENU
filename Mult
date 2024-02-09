@@ -12,16 +12,16 @@ ipdavps=$(curl -s ifconfig.me)
 
 while true; do
     clear
-    echo -e "\033[1;34m@LOCKED_SSH ✌️😎✌️ $ipdavps\033[0m"
+    echo -e "\033[1;37m@LOCKED_SSH ✌️😎✌️ $ipdavps\033[0m"
     figlet -c -f slant "SCRIPTS SSH"
-    echo -e "\033[1;37m[\033[1;31m01\033[1;37m] \033[1;37m• \033[1;33mSSHPLUS (CRACKEADO) FREE\033[0m"
-    echo -e "\033[1;37m[\033[1;31m02\033[1;37m] \033[1;37m• \033[1;36mSSHPLUS (ORIGINAL) PAGO\033[0m"
-    echo -e "\033[1;37m[\033[1;31m03\033[1;37m] \033[1;37m• \033[1;33mDT-PROXY (CRACKEADO) FREE\033[0m"
-    echo -e "\033[1;37m[\033[1;31m04\033[1;37m] \033[1;37m• \033[1;36mDT-PROXY (ORIGINAL) PAGO\033[0m"
-    echo -e "\033[1;37m[\033[1;31m05\033[1;37m] \033[1;37m• \033[1;33mCHECKUSER (DT-ORIGINAL)\033[0m"
-    echo -e "\033[1;37m[\033[1;31m06\033[1;37m] \033[1;37m• \033[1;33mCHECKUSE MULTAPPS (NANDO\033[0m"
-    echo -e "\033[1;37m[\033[1;31m666\033[1;37m] \033[1;37m• \033[1;31mMATE SUA VPS AQUI ☠️\033[0m"
-    echo -e "\033[1;37m[\033[1;31m00\033[1;37m] \033[1;37m• \033[1;37mSAIR\033[0m"
+    echo -e "\033[1;37m[\033[1;37m01\033[1;37m] \033[1;37m• \033[1;33mSSHPLUS (CRACKEADO) FREE\033[0m"
+    echo -e "\033[1;37m[\033[1;37m02\033[1;37m] \033[1;37m• \033[1;36mSSHPLUS (ORIGINAL) 033[1;37mPAGO 💰\033[0m"
+    echo -e "\033[1;37m[\033[1;37m03\033[1;37m] \033[1;37m• \033[1;33mDT-PROXY (CRACKEADO) FREE\033[0m"
+    echo -e "\033[1;37m[\033[1;37m04\033[1;37m] \033[1;37m• \033[1;36mDT-PROXY (ORIGINAL) 033[1;37mPAGO 💰\033[0m"
+    echo -e "\033[1;37m[\033[1;37m05\033[1;37m] \033[1;37m• \033[1;33mCHECKUSER (DT-ORIGINAL)\033[0m"
+    echo -e "\033[1;37m[\033[1;37m06\033[1;37m] \033[1;37m• \033[1;33mCHECKUSER MULTAPPS (NANDO\033[0m"
+    echo -e "\033[1;37m[\033[1;37m666\033[1;37m] \033[1;37m• \033[1;31mMATE SUA VPS AQUI ☠️\033[0m"
+    echo -e "\033[1;37m[\033[1;37m00\033[1;37m] \033[1;37m• \033[1;37mSAIR\033[0m"
 
     read -p "ESCOLHA UMA OPÇÃO: " choice
 
